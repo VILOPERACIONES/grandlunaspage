@@ -1,0 +1,52 @@
+{
+  "name": "Grand Lunas – TanStack Start",
+
+  // Node 22 LTS image as base (Bun is installed via the feature below)
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+
+  "features": {
+    // Installs the latest stable release of Bun
+    "ghcr.io/shyim/devcontainers-features/bun:0": {}
+  },
+
+  // Forward Vite dev-server and Wrangler preview ports
+  "forwardPorts": [8080, 8787],
+  "portsAttributes": {
+    "8080": {
+      "label": "Vite dev server",
+      "onAutoForward": "notify"
+    },
+    "8787": {
+      "label": "Wrangler preview",
+      "onAutoForward": "notify"
+    }
+  },
+
+  // Install Wrangler globally, then project dependencies
+  "postCreateCommand": "npm install -g wrangler && bun install",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "ms-vscode.vscode-typescript-next",
+        "biomejs.biome",
+        "cloudflare.cloudflare-workers-bindings"
+      ],
+      "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": "explicit"
+        },
+        "typescript.tsdk": "node_modules/typescript/lib",
+        "tailwindCSS.experimental.configFile": null
+      }
+    }
+  },
+
+  // Run as non-root user (node is the default user in the MS image)
+  "remoteUser": "node"
+}
