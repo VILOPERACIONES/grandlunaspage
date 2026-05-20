@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="bg-[#2a1810] text-amber-50/90">
       <div className="mx-auto max-w-7xl px-6 py-16 grid md:grid-cols-4 gap-10">
         <div className="md:col-span-1">
-          <img src={logo} alt="Grand Lunas Yucatán" className="h-16 w-auto mb-4 brightness-0 invert" />
+          <img src={logo} alt="Grand Lunas Yucatán" className="h-16 w-auto mb-4" />
           <p className="text-xs leading-relaxed opacity-70">
             Residencia boutique para adultos mayores en una hacienda yucateca restaurada, a 25 minutos al norte de Mérida. Hospedaje, cuidado profesional 24/7 y vida sin prisa — para estancias permanentes, temporales y recuperación post-hospitalaria.
           </p>
