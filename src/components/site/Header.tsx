@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-dark.png";
 
 export function Header() {
   const navLink =
@@ -7,13 +7,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-black/5">
       <div className="mx-auto max-w-7xl px-6 h-20 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-3">
-          <img src={logo} alt="Grand Lunas Yucatán" className="h-12 w-auto" />
-          <div className="leading-tight text-black">
-            <div className="font-serif text-xl tracking-wide">G<span className="text-base">RAND</span>-L<span className="text-base">UNAS</span></div>
-            <div className="text-[9px] tracking-[0.3em]">RETIREMENT HOME</div>
-            <div className="text-[9px] tracking-[0.3em]">YUCATÁN</div>
-          </div>
+        <Link to="/" className="flex items-center">
+          <img src={logo} alt="Grand Lunas Yucatán" className="h-14 w-auto" />
         </Link>
         <nav className="hidden md:flex items-center gap-10">
           <Link to="/nosotros" className={navLink} activeProps={{ className: "text-terracotta" }}>Nosotros</Link>
