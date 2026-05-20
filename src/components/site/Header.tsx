@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import logo from "@/assets/logo-dark.png";
+import logo from "@/assets/logo-header.png";
 
 export function Header() {
   const navLink =
