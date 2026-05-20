@@ -1,21 +1,12 @@
 import { Link } from "@tanstack/react-router";
-import { Moon } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 export function Footer() {
   return (
     <footer className="bg-[#2a1810] text-amber-50/90">
       <div className="mx-auto max-w-7xl px-6 py-16 grid md:grid-cols-4 gap-10">
         <div className="md:col-span-1">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="size-14 rounded-full bg-gradient-to-br from-amber-700 to-amber-900 flex items-center justify-center">
-              <Moon className="size-7 text-amber-100" />
-            </div>
-            <div className="leading-tight">
-              <div className="font-serif text-xl">G<span className="text-base">RAND</span>-L<span className="text-base">UNAS</span></div>
-              <div className="text-[9px] tracking-[0.3em] opacity-70">RETIREMENT HOME</div>
-              <div className="text-[9px] tracking-[0.3em] text-terracotta">YUCATÁN</div>
-            </div>
-          </div>
+          <img src={logo} alt="Grand Lunas Yucatán" className="h-16 w-auto mb-4 brightness-0 invert" />
           <p className="text-xs leading-relaxed opacity-70">
             Residencia boutique para adultos mayores en una hacienda yucateca restaurada, a 25 minutos al norte de Mérida. Hospedaje, cuidado profesional 24/7 y vida sin prisa — para estancias permanentes, temporales y recuperación post-hospitalaria.
           </p>
