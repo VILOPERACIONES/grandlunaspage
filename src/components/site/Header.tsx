@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Moon } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 export function Header() {
   const navLink =
@@ -7,15 +7,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-black/5">
       <div className="mx-auto max-w-7xl px-6 h-20 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-3">
-          <div className="size-12 rounded-full bg-gradient-to-br from-amber-700 to-amber-900 flex items-center justify-center">
-            <Moon className="size-6 text-amber-100" />
-          </div>
-          <div className="leading-tight">
-            <div className="font-serif text-xl text-ink">G<span className="text-base">RAND</span>-L<span className="text-base">UNAS</span></div>
-            <div className="text-[9px] tracking-[0.3em] text-ink/60">RETIREMENT HOME</div>
-            <div className="text-[9px] tracking-[0.3em] text-terracotta">YUCATÁN</div>
-          </div>
+        <Link to="/" className="flex items-center">
+          <img src={logo} alt="Grand Lunas Yucatán" className="h-12 w-auto" />
         </Link>
         <nav className="hidden md:flex items-center gap-10">
           <Link to="/nosotros" className={navLink} activeProps={{ className: "text-terracotta" }}>Nosotros</Link>
