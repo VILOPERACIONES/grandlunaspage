@@ -63,6 +63,33 @@ function NosotrosPage() {
         </div>
       </section>
 
+      <section className="py-24 px-6 bg-white">
+        <div className="mx-auto max-w-6xl grid md:grid-cols-2 gap-12">
+          <div>
+            <p className="text-xs tracking-[0.4em] uppercase text-ink/50 mb-4">Propósito</p>
+            <h2 className="font-serif text-4xl md:text-5xl text-ink mb-6">Misión</h2>
+            <div className="w-8 h-px bg-terracotta mb-6" />
+            <p className="text-sm text-ink/70 leading-relaxed">
+              Brindar servicios de calidad para el adulto mayor en un ambiente hogareño, cálido y cordial, así como promover el valor y responsabilidad para con ellos.
+            </p>
+          </div>
+          <div>
+            <p className="text-xs tracking-[0.4em] uppercase text-ink/50 mb-4">Hacia dónde vamos</p>
+            <h2 className="font-serif text-4xl md:text-5xl text-ink mb-6">Visión</h2>
+            <div className="w-8 h-px bg-terracotta mb-6" />
+            <p className="text-sm text-ink/70 leading-relaxed">
+              Queremos ser un agente de cambio y transformación social que contribuya a la dignificación de nuestros adultos mayores.
+            </p>
+            <p className="text-sm text-ink/70 leading-relaxed mt-4">
+              Una organización comprometida con la calidad y referente en su funcionamiento tanto para nuestro personal de atención y clientes, como para la sociedad en su conjunto.
+            </p>
+            <p className="text-sm text-ink/70 leading-relaxed mt-4">
+              Somos una entidad con una cultura compartida y comprometida en torno a sus valores, impulsora de un movimiento por respeto y agradecimiento que construya un mundo donde desaparezcan la indiferencia y el desdén hacia nuestros adultos.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 px-6">
         <div className="mx-auto max-w-6xl">
           <div className="text-center mb-16">
